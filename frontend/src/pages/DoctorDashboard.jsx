@@ -21,6 +21,7 @@ import {
   SparklesIcon,
 } from '../components/Icons';
 import { supabase } from '../lib/supabase';
+import { API_BASE_URL } from '../lib/config';
 import { CalendarConnectButton } from '../components/CalendarConnectButton';
 
 
@@ -436,7 +437,7 @@ export const DoctorDashboard = () => {
         }
       }
 
-      const backendUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+      const backendUrl = API_BASE_URL;
       const { data: sessionData } = await supabase.auth.getSession();
       const token = sessionData?.session?.access_token;
 

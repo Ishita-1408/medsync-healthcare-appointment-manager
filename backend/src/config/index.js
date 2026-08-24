@@ -10,7 +10,11 @@ dotenv.config();
 export const config = {
   port: parseInt(process.env.PORT || '5000', 10),
   nodeEnv: process.env.NODE_ENV || 'development',
-  clientUrl: process.env.CLIENT_URL || 'http://localhost:5173',
+  clientUrl:
+    process.env.CLIENT_URL ||
+    (process.env.NODE_ENV === 'production'
+      ? 'https://medsync-healthcare-appointment-manager-1zyefr4d8-ishita-6174.vercel.app'
+      : 'http://localhost:5173'),
   supabase: {
     url: process.env.SUPABASE_URL || '',
     anonKey: process.env.SUPABASE_ANON_KEY || '',
@@ -29,7 +33,11 @@ export const config = {
   google: {
     clientId: process.env.GOOGLE_CLIENT_ID || '',
     clientSecret: process.env.GOOGLE_CLIENT_SECRET || '',
-    redirectUri: process.env.GOOGLE_REDIRECT_URI || 'http://localhost:5000/api/calendar/auth/callback',
+    redirectUri:
+      process.env.GOOGLE_REDIRECT_URI ||
+      (process.env.NODE_ENV === 'production'
+        ? 'https://medsync-healthcare-appointment-manager.onrender.com/api/calendar/auth/callback'
+        : 'http://localhost:5000/api/calendar/auth/callback'),
   },
 };
 

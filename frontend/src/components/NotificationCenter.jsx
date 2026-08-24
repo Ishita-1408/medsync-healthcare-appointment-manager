@@ -43,13 +43,6 @@ export const NotificationCenter = () => {
   const fetchNotifications = useCallback(async () => {
     if (!user?.id) return;
     try {
-      // First process scheduled reminders if any are due
-      try {
-        await supabase.rpc('process_scheduled_reminders');
-      } catch {
-        // optional
-      }
-
       const { data, error } = await supabase
         .from('notifications')
         .select('*')

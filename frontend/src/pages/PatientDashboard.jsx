@@ -25,9 +25,10 @@ import {
 } from '../components/Icons';
 
 import { supabase } from '../lib/supabase';
+import { API_BASE_URL } from '../lib/config';
 import { CalendarConnectButton } from '../components/CalendarConnectButton';
 
-const backendUrl = import.meta.env.VITE_API_URL || '/api';
+const backendUrl = API_BASE_URL;
 
 // ─── Utility Helpers ──────────────────────────────────────────────────────────
 
@@ -1076,7 +1077,6 @@ export const PatientDashboard = () => {
         }
       }
 
-      const backendUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
       const { data: sessionData } = await supabase.auth.getSession();
       const token = sessionData?.session?.access_token;
 

@@ -421,3 +421,11 @@ BEGIN
     RETURN v_updated;
 END;
 $$;
+
+-- ------------------------------------------------------------------------------
+-- 6. RPC EXECUTION GRANTS
+-- ------------------------------------------------------------------------------
+GRANT EXECUTE ON FUNCTION public.process_scheduled_reminders() TO authenticated, anon, service_role;
+GRANT EXECUTE ON FUNCTION public.mark_notification_as_read(UUID) TO authenticated, service_role;
+GRANT EXECUTE ON FUNCTION public.mark_all_notifications_as_read() TO authenticated, service_role;
+GRANT EXECUTE ON FUNCTION public.generate_reminders_for_prescription(UUID, UUID, UUID, TIMESTAMPTZ) TO authenticated, service_role;

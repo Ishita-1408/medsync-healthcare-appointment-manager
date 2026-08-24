@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { supabase } from '../lib/supabase';
+import { API_BASE_URL } from '../lib/config';
 import { CalendarIcon, CheckCircleIcon, XIcon, RefreshCwIcon } from './Icons';
 
 export const CalendarConnectButton = ({ style = {} }) => {
@@ -11,7 +12,7 @@ export const CalendarConnectButton = ({ style = {} }) => {
   const [status, setStatus] = useState({ isConnected: false, googleEmail: null, updatedAt: null });
   const [notice, setNotice] = useState({ type: '', msg: '' });
 
-  const backendUrl = import.meta.env.VITE_API_URL || '/api';
+  const backendUrl = API_BASE_URL;
 
   // ── 1. Check Connection Status against Backend & DB ──
   const fetchStatus = useCallback(async () => {

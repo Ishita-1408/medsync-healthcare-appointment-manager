@@ -22,16 +22,21 @@ MedSync bridges the gap between patient appointment booking and clinical care de
 - **Pre-Visit Symptom Intake**: Submit chief complaints, onset, severity, current medications, and allergies.
 - **AI Care Summaries**: View doctor notes, simplified diagnosis explanations, and digital prescriptions.
 - **Notifications & Calendar**: Real-time in-app alerts and Google Calendar event synchronization.
+- <img width="926" height="482" alt="image" src="https://github.com/user-attachments/assets/3ded09be-7f4e-4830-824c-0ce10e5a1789" />
+
 
 ### Doctor Portal
 - **Clinical Schedule Management**: Configure weekly working hours and schedule leaves with automated patient conflict resolution.
 - **Appointment Queue**: Real-time list of upcoming, in-progress, and past patient consultations.
 - **Pre-Visit AI Briefing**: Review patient intake triage urgency (`Low`, `Medium`, `High`) and 3 clinical probe questions before starting visits.
 - **Consultation Notes & E-Prescriptions**: Document SOAP clinical notes and write multi-item digital prescriptions with dosages, frequencies, and instructions.
+- <img width="918" height="471" alt="image" src="https://github.com/user-attachments/assets/0166ee4e-b8ec-4308-a25c-1e51c2462ab1" />
+
 
 ### Administrator Console
 - **System Monitoring**: View total appointments, active physicians, and platform metrics.
 - **Doctor Directory Management**: Approve and manage physician profiles.
+<img width="926" height="491" alt="image" src="https://github.com/user-attachments/assets/97dfff81-1227-4c50-a0cc-060202a84e9a" />
 
 ---
 

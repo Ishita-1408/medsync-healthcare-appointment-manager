@@ -22,7 +22,13 @@ MedSync bridges the gap between patient appointment booking and clinical care de
 - **Pre-Visit Symptom Intake**: Submit chief complaints, onset, severity, current medications, and allergies.
 - **AI Care Summaries**: View doctor notes, simplified diagnosis explanations, and digital prescriptions.
 - **Notifications & Calendar**: Real-time in-app alerts and Google Calendar event synchronization.
-- <img width="926" height="482" alt="image" src="https://github.com/user-attachments/assets/3ded09be-7f4e-4830-824c-0ce10e5a1789" />
+  <img width="926" height="482" alt="image" src="https://github.com/user-attachments/assets/3ded09be-7f4e-4830-824c-0ce10e5a1789" />
+<img width="873" height="470" alt="image" src="https://github.com/user-attachments/assets/6840615b-c863-4d5b-bfee-5a79e435f2ac" />
+
+  <img width="892" height="487" alt="image" src="https://github.com/user-attachments/assets/4161ce5c-a1b1-4388-a3a3-046a06d7c779" />
+  <img width="887" height="380" alt="image" src="https://github.com/user-attachments/assets/3e0640f8-3a80-4c3a-aafc-8ee99a610e15" />
+
+
 
 
 ### Doctor Portal
@@ -30,7 +36,7 @@ MedSync bridges the gap between patient appointment booking and clinical care de
 - **Appointment Queue**: Real-time list of upcoming, in-progress, and past patient consultations.
 - **Pre-Visit AI Briefing**: Review patient intake triage urgency (`Low`, `Medium`, `High`) and 3 clinical probe questions before starting visits.
 - **Consultation Notes & E-Prescriptions**: Document SOAP clinical notes and write multi-item digital prescriptions with dosages, frequencies, and instructions.
-- <img width="918" height="471" alt="image" src="https://github.com/user-attachments/assets/0166ee4e-b8ec-4308-a25c-1e51c2462ab1" />
+  <img width="918" height="471" alt="image" src="https://github.com/user-attachments/assets/0166ee4e-b8ec-4308-a25c-1e51c2462ab1" />
 
 
 ### Administrator Console

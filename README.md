@@ -3,6 +3,7 @@
 MedSync is a production-grade healthcare management and clinical workflow platform designed to streamline doctor-patient appointments, pre-visit symptom intake, AI clinical triage, digital e-prescriptions, automated medication schedules, and bidirectional Google Calendar synchronization.
 
 ---
+<img width="937" height="476" alt="image" src="https://github.com/user-attachments/assets/42a6a377-6c03-44e4-b68c-7d2a070608cc" />
 
 ## 1. Project Overview
 

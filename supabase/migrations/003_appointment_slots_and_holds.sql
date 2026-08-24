@@ -1,0 +1,12 @@
+-- ==============================================================================
+-- [OBSOLETE / SUPERSEDED - DO NOT EXECUTE]
+-- File: supabase/migrations/003_appointment_slots_and_holds.sql
+-- ==============================================================================
+-- NOTE: This migration is obsolete and has been superseded by:
+-- 1. supabase/migrations/001_foundation.sql (core appointments & exclusion constraint)
+-- 2. supabase/migrations/005_booking_concurrency_protection.sql (bulletproof concurrency, triggers & atomic booking)
+--
+-- MedSync dynamically calculates available slots in real-time from doctor_working_hours,
+-- doctor_leaves, and appointments, ensuring zero synchronization overhead.
+-- DO NOT EXECUTE THIS FILE.
+-- ==============================================================================

@@ -1,0 +1,36 @@
+{
+  "name": "medsync-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MedSync Healthcare Appointment & Follow-up Manager - Secure API Backend",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "test:email": "node scripts/test_email_system.js",
+    "test:calendar": "node scripts/test_google_calendar_sync.js",
+    "test:reminder-live": "node scripts/test_reminder_live.js",
+    "test:all": "node scripts/run_all_tests.js"
+  },
+  "keywords": [
+    "medsync",
+    "healthcare",
+    "express",
+    "supabase",
+    "api"
+  ],
+  "author": "MedSync Health",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "googleapis": "^176.0.0",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "resend": "^6.22.0"
+  }
+}

@@ -256,46 +256,8 @@ export const Login = () => {
                 )}
               </button>
 
-              {/* Social Login Divider */}
-              <div className="auth-divider">
-                <span>or continue with</span>
-              </div>
-
-              {/* Secondary OAuth Buttons */}
-              <div className="auth-social-grid">
-                <button
-                  type="button"
-                  className="btn-social"
-                  title="Direct password sign-in is active for your clinic account"
-                  onClick={() => setErrorMsg('OAuth single-sign-on is managed via institutional SSO. Please use your clinic email and password.')}
-                >
-                  <svg width="18" height="18" viewBox="0 0 24 24">
-                    <path fill="#EA4335" d="M12 5c1.54 0 2.94.55 4.04 1.45l3.03-3.03C17.21 1.7 14.77 1 12 1 7.42 1 3.56 3.63 1.73 7.44l3.66 2.84C6.27 7.21 8.87 5 12 5z"/>
-                    <path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58l3.71 2.88c2.16-2 3.71-4.94 3.71-8.7z"/>
-                    <path fill="#FBBC05" d="M5.39 14.72c-.24-.71-.39-1.47-.39-2.27s.15-1.56.39-2.27L1.73 7.34C.63 9.53 0 11.98 0 14.55s.63 5.02 1.73 7.21l3.66-2.84z"/>
-                    <path fill="#34A853" d="M12 23.55c3.24 0 5.95-1.08 7.93-2.91l-3.71-2.88c-1.08.73-2.47 1.18-4.22 1.18-3.13 0-5.73-2.21-6.61-5.28L1.73 16.5C3.56 20.37 7.42 23.55 12 23.55z"/>
-                  </svg>
-                  <span>Google</span>
-                </button>
-
-                <button
-                  type="button"
-                  className="btn-social"
-                  title="Direct password sign-in is active for your clinic account"
-                  onClick={() => setErrorMsg('Microsoft Azure AD is configured for hospital enterprise networks. Please use your clinic credentials.')}
-                >
-                  <svg width="18" height="18" viewBox="0 0 24 24">
-                    <path fill="#F25022" d="M1 1h10v10H1z"/>
-                    <path fill="#00A4EF" d="M1 13h10v10H1z"/>
-                    <path fill="#7FBA00" d="M13 1h10v10H13z"/>
-                    <path fill="#FFB900" d="M13 13h10v10H13z"/>
-                  </svg>
-                  <span>Microsoft</span>
-                </button>
-              </div>
-
               {/* Card Footer Link */}
-              <div className="auth-card-footer">
+              <div className="auth-card-footer" style={{ marginTop: '1.75rem' }}>
                 Don't have an account?{' '}
                 <Link to="/register" className="auth-link">
                   Create an account

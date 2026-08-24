@@ -18,18 +18,6 @@ MedSync is a production-grade healthcare management and clinical workflow platfo
 
 ---
 
-## ⚠️ Demo & Deployment Limitations
-
-> [!NOTE]
-> 1. **Demonstration Project**: The application is currently deployed as an academic and portfolio demonstration project.
-> 2. **Email Notifications**: Email delivery (via Resend) is currently configured to work only with the configured developer/test email account because a custom production email domain has not yet been purchased or configured.
-> 3. **Google Calendar Integration**: Google Calendar OAuth synchronization is currently in Google Cloud Testing Mode for the configured developer/test Google account and may not work for other unverified users or email accounts.
-> 4. **Future Multi-User Support**: Support for arbitrary user email accounts and production-scale email delivery is planned as a future enhancement after configuring a custom domain, production DNS records (SPF/DKIM/DMARC), and full OAuth app verification.
-> 5. **Deployment Stack**: The current live deployment operates with a **Vercel frontend** and **Render backend**, backed by **Supabase**.
-> 6. **Official Live URL**: The live application can be accessed at [https://medsync-healthcare-appointment-mana.vercel.app/](https://medsync-healthcare-appointment-mana.vercel.app/).
-
----
-
 ## 🛠️ Technology & Deployment Stack
 
 - **Frontend**: React 19 + Vite
@@ -277,3 +265,15 @@ npm run build
 - [Google Calendar OAuth Setup Guide](docs/google_calendar_setup.md)
 - [System Design Document](docs/system_design.md)
 - [Backend Architecture & Guide](backend/README.md)
+
+---
+
+## ⚠️ Demo & Deployment Limitations
+
+> [!NOTE]
+> 1. **Demonstration Project**: The application is currently deployed as an academic and portfolio demonstration project.
+> 2. **Email Notifications**: Email delivery (via Resend) is currently configured to work only with the configured developer/test email account because a custom production email domain has not yet been purchased or configured.
+> 3. **Google Calendar Integration**: Google Calendar OAuth synchronization is currently in Google Cloud Testing Mode for the configured developer/test Google account and may not work for other unverified users or email accounts.
+> 4. **Future Multi-User Support**: Support for arbitrary user email accounts and production-scale email delivery is planned as a future enhancement after configuring a custom domain, production DNS records (SPF/DKIM/DMARC), and full OAuth app verification.
+> 5. **Deployment Stack**: The current live deployment operates with a **Vercel frontend** and **Render backend**, backed by **Supabase**.
+> 6. **Official Live URL**: The live application can be accessed at [https://medsync-healthcare-appointment-mana.vercel.app/](https://medsync-healthcare-appointment-mana.vercel.app/).

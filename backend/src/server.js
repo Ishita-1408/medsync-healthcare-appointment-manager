@@ -23,6 +23,7 @@ app.use(morgan(config.nodeEnv === 'production' ? 'combined' : 'dev'));
 
 // CORS Configuration — Production Vercel domain, local development, and Render support
 const allowedOrigins = [
+  'https://medsync-healthcare-appointment-mana.vercel.app',
   'https://medsync-healthcare-appointment-manager-1zyefr4d8-ishita-6174.vercel.app',
   'http://localhost:5173',
   'http://127.0.0.1:5173',
